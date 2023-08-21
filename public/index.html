@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body data-scroll-time="2">
+        <header >
+            <h1 id="portfolio-title">Portfolio</h1>
+            <nav>
+                <ul>
+                    <li class="nav-item, nav-ecommerce"><a href="#ecommerce" >Ecommerce</a></li>
+                    <li class="nav-item,nav-movie-fight"><a href="#movie-fight">Movie Fight</a></li>
+                    <li class="nav-item, nav-nutrition-label"><a href="#nutrition-label">Nutrition Label</a></li>
+                    <li class="nav-item, nav-timer"><a href="#timer">Timer</a></li>
+                    <li class="nav-item, nav-quiz"><a href="#quiz">Quiz</a></li>
+                    <li class="nav-item, nav-survey-form"><a href="#survey-form">Survey Form</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div id="intro">
+                <h1 id="my-name">Elise Carlson</h1>
+                <p id="my-title">Full Stack Developer</p>
+                <img src="https://media.licdn.com/dms/image/C4E03AQG23hFDfYsCIA/profile-displayphoto-shrink_800_800/0/1660839630376?e=1695859200&v=beta&t=qG96HkHwFP5yBER0aHTVMhNycbBHq0pmIE4fV7SCpgg" loading="lazy" alt="profile image" id="image" class="profile-image">
+            </div>
+            <div class="div, description">
+                <p id="description-portfolio">Thank you for visiting my portfolio website. I have created this website using knowledge I gained from studying to become a certified AWS Cloud Practitioner and fullstack developer. The portfolio website is hosted on a AWS EC2 instance.</p>
+                <p id="description-projects">In addition, this portfolio showcases several smaller projects I have created.</p>
+            </div>
+            <div class="div, projects">
+                <ul id="projects">
+                    <!-- REMEMBER TO ADD PATHS TO HREFS BELOW AND TO NAV
+                     -->
+                    <li><a id="ecommerce" href="http://home.ejc-portfolio.com:3000/ecommerce"><b>Ecommerce:</b></a> Mock website for selling clothing apparel. The site allows for admin to create a profile, signin, or signout. Admin can add, edit, and delete products from the inventory. A customer can add products to their cart, view cart, and edit it. Uses HTML, CSS, JS, Node JS, and Express.js.</li>
+                    <li><a id="movie-fight" href="http://home.ejc-portfolio.com:3000/movie-fight"><b>Movie Fight:</b></a> A movie comparison project that allows the user to search for two different movies and then compares the scores (eg. oscars, IMBD rating, etc) to show which movie is the winner. Uses HTML, CSS, JS, Node JS, and an API.</li>
+                    <li><a id="nutrition-label" href="http://home.ejc-portfolio.com:3000/nutritionLabel"><b>Nutrition Label:</b></a> Illustrates typography with the use of HTML and CSS.</li>
+                    <li><a id="timer" href="http://home.ejc-portfolio.com:3000/timer"><b>Timer:</b></a> A timer that default starts at 30 seconds, but allows the user to edit the about of time as desired. Uses HTML, CSS, and JS.</li>
+                    <li><a id="quiz" href="http://home.ejc-portfolio.com:3000/quiz"><b>Quiz:</b></a> The development of this quiz focused on web accessibility. The application is developed for most all users with the use of code that optimzes support of screen readers, smooth scrolling, and color contrast. Uses HTML and CSS.</li>
+                    <li><a id="survey-form" href="http://home.ejc-portfolio.com:3000/survey-form"><b>Survey Form:</b></a> The survey application explores the use of various types of html elements commonly used or specific to forms, such as form, fieldset, label, input (ie. name, email, number, radio, and checkbox), textarea, and button. Uses HTML and CSS.</li>
+                </ul>
+            </div>
+            <div id="contact">
+                <h1><a id="contact-me" href="./contactForm.html" target="_blank">Click to contact me!</a></h1>
+                <p>Or visit any of my socials: </p>
+                <ul class="socials">
+                    <li id="linkedin"><a href="https://www.linkedin.com/in/elise-carlson-a2b12a249/" target="_blank">Linkedin</a></li>
+                    <li id="github"><a href="https://github.com/elisejc2" target="_blank">Github</a></li>
+                    <li id="codepen"><a href="https://codepen.io/sunny_ec2" target="_blank">Codepen</a></li>
+                </ul>
+            </div>
+        </main>
+        <div>
+            <iframe id="map-src" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d198776.23580067515!2d-77.26667907174557!3d38.88101734248727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b69d7ba7a70f%3A0xe08603603385be34!2sArlington%20County%2C%20Arlington%2C%20VA!5e0!3m2!1sen!2sus!4v1690819733904!5m2!1sen!2sus" width="400" height="250" style="border:0;" allowfullscreen="" target="_blank" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+        <footer>
+            <p><a id="portfolio-footer" href="./ec2portfolio.html">Portfolio Home</a></p>
+            <address>
+                <a id="address" href="#map-src">
+                    Arlington, VA 22209
+                </a>
+            </address>
+        </footer>
+        <!-- <script src="../index.js"></script> -->
+    </body>
+</html>

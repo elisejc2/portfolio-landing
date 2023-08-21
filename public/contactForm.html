@@ -1,0 +1,43 @@
+<!-- HTML: contact form -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Form</title>
+        <link rel="stylesheet" href="contactForm.css">
+    </head>
+    <body>
+        <div id="container">
+            <form id="form" enctype="text/plain">
+                <div class="instructions">
+                    <h1>Contact Form</h1>
+                    <p>To contact me, please fill out the contact form below.</p>
+                    <p>I will do my best to respond as soon as possible.</p>
+                    <p>Thank you!</p>
+                </div>
+                <fieldset>
+                    <label for="name" class="input">
+                        Name: <input id="name"  type="name" placeholder="Full Name" required>
+                    </label>
+                    <label for="business" class="input">
+                        Business: <input id="business" type="text"  placeholder="Business Name">
+                    </label>
+                    <label for="topic" class="input">
+                        Message Topic: <input id="topic" type="text" placeholder="Message topic" max="80">
+                    </label>
+                    <label for="email" class="input">
+                        Your Email: <input id="email" type="email"  placeholder="YourEmail@example.com">
+                    </label>
+                    <label for="message" class="input">
+                        <textarea id="message" minlength="20" maxlength="600" rows="5" cols="40"  placeholder="Enter your message here..."></textarea>
+                    </label>
+                </fieldset>
+                <fieldset class="fieldset, submit">
+                    <input id="submit" type="submit" value="Send">
+                </fieldset>
+            </form>
+        </div>
+    </body>
+    <script src="contactForm.js"></script>
+</html>
