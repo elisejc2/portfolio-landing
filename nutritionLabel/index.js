@@ -5,8 +5,8 @@ router.get('/', (req, res) => {
  res.sendFile(__dirname + '/nutrition.html')
 })
 
-router.get('/nutritionLabel/styles.css', (req, res) => {
- res.sendFile(__dirname + '/styles.css')
+router.get('/nutritionLabel.css', (req, res) => {
+ res.sendFile(__dirname + '/nutritionLabel.css')
 })
 
 module.exports = router;

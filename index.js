@@ -8,6 +8,9 @@ const Mail = require('./testmail/index.js')
 const movieFightRouter = require('./Elise-Movie-Fight-Project/index.js')
 const nutritionLabelRouter = require('./nutritionLabel/index.js')
 const ecommerceRouter = require('./ecommerce/index.js')
+const surveyFormRouter = require('./survey-form/index.js')
+const quizRouter = require('./quiz/index.js')
+const timerRouter = require('./timer/index.js')
 const jsonParser = bodyParser.json()
 var urlencodedParser = bodyParser.urlencoded({ extended: false })
 
@@ -29,10 +32,13 @@ app.use(express.static('public'))
 app.get('/', (req, res) => {
  res.sendFile(__dirname + '/ec2portfolio/contactForm.js')
 })
+
 app.use('/ecommerce', ecommerceRouter)
 app.use('/nutritionLabel', nutritionLabelRouter)
 app.use('/movie-fight', movieFightRouter)
-
+app.use('/survey-form', surveyFormRouter)
+app.use('/quiz', quizRouter)
+app.use('/timer', timerRouter)
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
