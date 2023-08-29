@@ -1,0 +1,51 @@
+body {
+ margin: 1rem;
+ font-family: Arial;
+ background-color: #FDE3F6;
+ text-align: center;
+}
+
+form {
+  display: inline-block;
+  margin: auto;
+  
+}
+
+/* contents within the form */
+div, fieldset {
+  border: none;
+}
+/* #name, #email, #number {
+  display: flex;
+  input-align: center;
+} */
+
+#description {
+  margin-left: 0.5rem;
+}
+
+h1 {
+  font-family: Monaco;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+/* .portfolio-home {} */
+
+.survey-input {
+  padding: 0.5em;
+}
+
+/* submit button */
+#submit {
+  background-color: black;
+  color: white;
+  border-color: black;
+  font-family: Arial;
+  width: 60%;
+}
+
+.input-submit {
+  display: flex;
+  justify-content: center;
+}

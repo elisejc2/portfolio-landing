@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="http://home.ejc-portfolio.com:3000/survey-form/styles.css">
+  </head> 
+
+
+  <body>
+    <header>
+     <a class="portfolio-home" href="http://home.ejc-portfolio.com:3000/">Portfolio Home</a>
+    </header>
+    <div class="survey-description">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Please fill out the survey. Thank you!</p>
+      </div>
+
+
+    <form class="survey-form" id="survey-form">
+      <fieldset class="survey-input">
+        <label class="input-name" for="name" id="name-label">
+          <input placeholder="Full Name" id="name" type="text" required />
+        </label>
+        <label class="input-email" for="email" id="email-label">
+          <input placeholder="example@email.com" id="email" type="email" name="email" required/>
+        </label>
+        <label class="input-age" for="number" id="number-label">
+          <label id="number-label" for="number">
+          <input id="number" type="number" min="10" max="115" name="number" placeholder="Age" required/>(years old)
+        </label>
+      </fieldset>
+
+
+      <fieldset class="survey-dropdown" >
+        <p>How did you hear about us?</p>
+        <label class="input-dropdown" for="dropdown">
+          <select id="dropdown" name="dropdown" required>
+            <option disabled selected value >(select one)</option>
+            <option value="our website" >Our website</option>
+            <option value="recommendation" >Recommendation</option>
+            <option value="social media" >Social Media</option>
+            <option other="other" >Other</option>
+          </select>
+        </label>
+      </fieldset>
+
+
+      <fieldset class="survey-radio">
+        <p>What is your satification level with us?</p>
+        <label class="input-radio" for="radio">
+          <input type="radio" id="radio" name="radio" value="radio3"/> Satisfied
+          <input type="radio" id="radio" name="radio" value="radio2"/> Okay
+          <input type="radio" id="radio" name="radio" value="radio1" /> Unsatisfied
+        </label>
+      </fieldset>
+
+
+      <fieldset class="survey-radio" name="group">
+        <p>Would you like to sign up to receive weekly blog posts?</p>
+        <label class="input-radio" for="radio">
+          <input type="radio" id="radio" name="blog" value="yes"/> Yes
+          <input type="radio" id="radio" name="blog" value="no"/> No
+        </label>
+      </fieldset>
+
+
+      <fieldset class="survey-checkbox">
+        <p>How likely are you to recommend us?</p>
+        <label class="input-checkbox" for="checkbox">
+          <input type="checkbox" id="checkbox" name="check3" value="3" /> Very likely
+          <input type="checkbox" id="checkbox" name="check2" value="2" /> Possibly
+          <input type="checkbox" id="checkbox" name="check1" value="1" /> Unlikely
+        </label>
+      </fieldset>
+
+
+      <fieldset class="survey-textarea">
+        <p></p>
+        <label class="input-textarea" for="textarea">
+          <textarea id="textarea" placeholder="Enter your comments here..."></textarea>
+        </label>
+      </fieldset>
+
+
+      <fieldset class="survey-submit">
+        <div class="input-submit" for="submit">
+          <button id="submit">Submit</button>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>

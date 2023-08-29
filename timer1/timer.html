@@ -1,0 +1,41 @@
+<!-- elise -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="http://home.ejc-portfolio.com:3000/timer/timercss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+
+    <script src="https://kit.fontawesome.com/599a3f268b.js" crossorigin="anonymous"></script>
+    <style href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"></style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>timer project</title>
+</head>
+<body>
+    <header>
+      <a class="portfolio-home" href="http://home.ejc-portfolio.com:3000/">Portfolio Home</a>
+    </header>
+    <div class="timer">
+        <div class="controls">
+            <input id="duration" value="30"/>
+            <div class="startpause">
+                <button id="start">
+                    <i class="fa-solid fa-play"></i>
+                </button>
+                <button id="pause">
+                    <i class="fa-solid fa-pause"></i>
+                </button>
+            </div>
+        </div>
+    
+        <svg class="dial">
+            <circle r="190" cx="200" cy="200" fill="transparent"  stroke="blue" stroke-width="15" transform="rotate(-90 200 200)"/>
+        </svg>
+    </div>
+    <script src="http://home.ejc-portfolio.com:3000/timer/timer.js"></script>
+    <script src="http://home.ejc-portfolio.com:3000/timer/indexTimer.js"></script>
+</body>
+</html>
+
