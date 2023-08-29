@@ -16,7 +16,6 @@ const onSubmit = (e) => {
     "email": "${email.value}",
     "message": "${message.value}"
   }`
-// const body = `fake body ${name.value}`
   xhr.send(body);
 }
 

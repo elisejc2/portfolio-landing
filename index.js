@@ -10,6 +10,7 @@ const nutritionLabelRouter = require('./nutritionLabel/index.js')
 const ecommerceRouter = require('./ecommerce/index.js')
 const surveyFormRouter = require('./survey-form/index.js')
 const quizRouter = require('./quiz/index.js')
+const Timer = require('./timer/timer.js')
 const timerRouter = require('./timer/index.js')
 const jsonParser = bodyParser.json()
 var urlencodedParser = bodyParser.urlencoded({ extended: false })
@@ -30,9 +31,19 @@ app.post('/notify', (req, res) => {
 
 app.use(express.static('public'))
 app.get('/', (req, res) => {
- res.sendFile(__dirname + '/ec2portfolio/contactForm.js')
+ res.sendFile(__dirname + '/public/contactForm.js')
 })
 
+app.get('/', (req, res) => {
+ res.sendFile(__dirname + '/public/timerButton.js')
+})
+
+/* app.post('/Timer', (req, res) => {
+const { durationInput, startButton, pauseButton, callbacks  } = req.body;
+const timerButton = new Timer (durationInput, startButton, pauseButton, callbacks)
+console.log(`timerButton: ${timerButton}`)
+res.send(timerButton)
+}) */
 app.use('/ecommerce', ecommerceRouter)
 app.use('/nutritionLabel', nutritionLabelRouter)
 app.use('/movie-fight', movieFightRouter)
