@@ -7,7 +7,7 @@ const AdminProductsRouter = require('./routes/admin/products');
 const UserProductsRouter = require('./routes/products');
 const cartsRouter = require('./routes/carts');
 
-const app = express.Router();
+const app = express();
 const port = 3001
 //MIDDLEWARE
 app.use(express.static('public')); //every request that comes thru our app is handled first by this middleware in public (it will look in public to see if there is a route that matches the request)
